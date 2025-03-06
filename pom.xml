@@ -22,6 +22,14 @@
             <artifactId>h2</artifactId>
             <version>1.4.199</version>
         </dependency>
+
+        <!-- Postgresql 데이터베이스 -->
+<!--        <dependency>-->
+<!--            <groupId>org.postgresql</groupId>-->
+<!--            <artifactId>postgresql</artifactId>-->
+<!--            <version>42.5.1</version>-->
+<!--        </dependency>-->
+
     </dependencies>
 
     <properties>

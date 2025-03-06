@@ -4,6 +4,8 @@ import javax.persistence.*;
 
 @Entity
 public class Member {
+    // 객체를 테이블에 맞추어 데이터 중심으로 모델링하면 협력 관계 X
+    // 객체는 참조로 연관된 객체를 찾지만, 테이블은 외래키 조인으로 연관된 테이블 찾는다!!
     @Id @GeneratedValue
     @Column(name = "MEMBER_ID")
     private Long id;
