@@ -1,6 +1,8 @@
 package jpabook.jpashop.domain;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Member {
@@ -13,6 +15,9 @@ public class Member {
     private String city;
     private String street;
     private String zipCode;
+
+    @OneToMany(mappedBy = "member")
+    private List<Order> orders = new ArrayList<>();
 
     // 동적 객체 생성을 위한 기본 생성자
     public Member() {}
